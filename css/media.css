@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+    .nav-list{
+        display: none;
+    }
+    .nav-menu-img-bar{
+        display: block;
+    }
+   .nav-list{
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: auto;
+    background-color: #8e89893d;
+    top: 100px;
+   left: 0px;
+   padding: 10px;
+   transform: scale(0);
+   transition: 0.3s;
+   transform-origin: top left;
+   }
+   .show{
+    transform: scale(1);
+   }
+   .nav-list a{
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+   
+    top: 100px;
+    left: 0px;
+    text-align: center;
+    align-items: center;
+    background-color: #ffffffcf;
+
+   }
+   .nav-list a:hover{
+    background-color: #8e89893d;
+   }
+}
