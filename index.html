@@ -7,6 +7,8 @@
     <title>Funiture.com</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./img/RiSofaFill.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./css/media.css">
     <script src="./js/javascript.js" defer></script>
@@ -41,6 +43,68 @@
         <!-- main start -->
         <main class="main">
             <div class="main-left">
+                <div class="main-left-up">
+
+                    <div class="main-left-up-l">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/sofa-1.jpg" alt="sofa-1"></div>
+                                <div class="swiper-slide"><img src="./img/sofa-2.jpg" alt="sofa-1"></div>
+                                <div class="swiper-slide"><img src="./img/sofa-3.jpg" alt="sofa-1"></div>
+                                <div class="swiper-slide"><img src="./img/sofa-4.jpg" alt="sofa-1"></div>
+
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="main-left-up-r">
+                        <button><img src="./img/sofa-1.jpg" alt="sofa-1" width="100%"></button>
+                        <button><img src="./img/sofa-2.jpg" alt="sofa-2" width="100%"></button>
+                        <button><img src="./img/sofa-3.jpg" alt="sofa-3" width="100%"></button>
+                        <button><img src="./img/sofa-4.jpg" alt="sofa-4" width="100%"></button>
+
+                    </div>
+                </div>
+                <div class="main-left-bottom">
+
+                    <div class="main-left-bottom-viewed">
+                        <p>Recently viewed</p>
+                        <div>
+                            <img src="./img/Left.svg" alt="arrow">
+                            <img src="./img/Right.svg" alt="arrow">
+                        </div>
+                    </div>
+
+                    <div class="main-left-bottom-viewed-img">
+                        <div class="main-left-bottom-viewed-img-box">
+                            <img src="./img/chair-1.jpg" alt="sofa-1" width="100px">
+                            <span class="main-left-bottom-viewed-img-box-text">
+                                <p>Chair 1</p>
+                                <p>&dollar; 100</p>
+                            </span>
+                        </div>
+                        <div class="main-left-bottom-viewed-img-box">
+                            <img src="./img/chair-2.jpg" alt="sofa-1" width="100px">
+                            <span class="main-left-bottom-viewed-img-box-text">
+                                <p>Chair 1</p>
+                                <p>&dollar; 100</p>
+                            </span>
+                        </div>
+                        <div class="main-left-bottom-viewed-img-box">
+                            <img src="./img/chair-3.jpg" alt="sofa-1" width="100px">
+                            <span class="main-left-bottom-viewed-img-box-text">
+                                <p>Chair 1</p>
+                                <p>&dollar; 100</p>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
             <!-- mainright start -->
@@ -48,10 +112,10 @@
                 <div class="main-right-top">
                     <h2>Sofas</h2>
                     <img src="./img/Favorite.svg" alt="favorite">
+
                 </div>
                 <div class="main-right-info">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam similique vero adipisci eligendi,
-                        .</p>
+                    <p>This item is available in 4 colours and 3 sizes.</p>
                 </div>
                 <div class="main-right-price">
                     <h1>&dollar; 100</h1>
@@ -81,6 +145,24 @@
                     <button class="main-right-btn-buy">Buy now</button>
                     <button class="main-right-btn-basket">Add to basket</button>
                 </div>
+                <div class="main-right-description">
+
+                    <div class="main-right-description-delivery">
+                        <p>Delivery to 5 - 7 weeks</p>
+                        <p>Why the long delivery time?
+                            <span class="main-right-description-delivery-span"
+                                id="main-right-description-delivery-span">We deliver your order to your home.
+                                Delivery time is 5-7 weeks.</span>
+                        </p>
+                    </div>
+                    <div class="main-right-description-delivery">
+                        <img src="./img/ArrowForward.svg" alt="" class="main-right-description-delivery-img"
+                            id="main-right-description-delivery-img">
+
+                    </div>
+                </div>
+
+
 
 
             </div>
@@ -91,6 +173,25 @@
 
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 
 </body>
 

@@ -5,18 +5,22 @@
     .nav-menu-img-bar{
         display: block;
     }
+        .main-left-up{
+            width: 450px;
+        }
    .nav-list{
     position: absolute;
     display: block;
     width: 50%;
     height: auto;
-    background-color: #8e89893d;
+    background-color: #8e8989b1;
     top: 100px;
    left: 0px;
    padding: 10px;
    transform: scale(0);
    transition: 0.3s;
    transform-origin: top left;
+   z-index: 1000;
    }
    .show{
     transform: scale(1);
@@ -34,6 +38,6 @@
 
    }
    .nav-list a:hover{
-    background-color: #8e89893d;
+    background-color: #fff;
    }
 }
